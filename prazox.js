@@ -31,7 +31,7 @@ function checkInput() {
         setErrorFor(password, "Password cannot be blank");
     }else if(!isValidPassword(passwordValue)){
         setErrorFor(password, "Password must contain letters, number and special characters");
-    }else if(passwordValue < 8){
+    }else if(passwordValue.length < 8){
         setErrorFor(password, "Password cannot be less than 8");
     } else {
         setSuccessFor(password);

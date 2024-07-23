@@ -19,7 +19,7 @@ function checkInput() {
   // username
   if (usernameValue === "") {
     setErrorFor(username, "Username cannot be blank");
-  } else if(usernameValue < 5){
+  } else if(usernameValue.length < 5){
     setErrorFor(username, "Username cannot be less than 5 chararcter");
   } else {
     setSuccessFor(username);
@@ -30,7 +30,7 @@ function checkInput() {
     setErrorFor(password, "Password cannot be blank");
   }else if(!isValidPassword(passwordValue)){
     setErrorFor(password, "Password must contain letters, number and special characters");
-  }else if(passwordValue < 8){
+  }else if(passwordValue.length < 8){
     setErrorFor(password, "Password cannot be less than 8");
   } else {
     setSuccessFor(password);
