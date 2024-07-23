@@ -7,7 +7,7 @@ Praform.addEventListener("submit", function (e) {
     checkInput();
 });
 function isValidPassword(password) {
-    return /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/.test(password);
+    return /[A-Za-z\d@$!%?&]{8,}$/.test(password);
   }
 function isEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
