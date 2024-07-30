@@ -416,4 +416,8 @@ small {
   .form{
     margin: 8% auto 0%;
   }
+  .dropdown-content {
+    position: relative;
+    left: 0;
+  }
 }
